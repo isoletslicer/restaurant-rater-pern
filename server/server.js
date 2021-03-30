@@ -12,11 +12,11 @@ app.use(cors());
 app.use(express.json());
 
 
-if (process.env.NODE_ENV === "production") {
-  //server static content
-  //npm run build
-  app.use(express.static(path.join(__dirname, "client/build")));
-}
+// if (process.env.NODE_ENV === "production") {
+//   //server static content
+//   //npm run build
+//   app.use(express.static(path.join(__dirname, "client/build")));
+// }
 
 
 
@@ -148,9 +148,9 @@ app.post("/api/v1/restaurants/:id/addReview", async (req, res) => {
 });
 
 
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "client/build/index.html"));
-});
+// app.get("*", (req, res) => {
+//   res.sendFile(path.join(__dirname, "client/build/index.html"));
+// });
 
 
 
