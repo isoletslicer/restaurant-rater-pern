@@ -12,14 +12,6 @@ app.use(cors());
 app.use(express.json());
 
 
-// if (process.env.NODE_ENV === "production") {
-//   //server static content
-//   //npm run build
-//   app.use(express.static(path.join(__dirname, "client/build")));
-// }
-
-
-
 
 // Get all Restaurants
 app.get("/api/v1/restaurants", async (req, res) => {
@@ -146,11 +138,6 @@ app.post("/api/v1/restaurants/:id/addReview", async (req, res) => {
     console.log(err);
   }
 });
-
-
-// app.get("*", (req, res) => {
-//   res.sendFile(path.join(__dirname, "client/build/index.html"));
-// });
 
 
 
