@@ -10,7 +10,6 @@ import { lightTheme, darkTheme } from "./components/Themes"
 import  {useDarkMode} from "./components/useDarkMode"
 import Toggle from "./components/Toggler"
 
-
 const App = () => {
   const [theme, themeToggler, mountedComponent] = useDarkMode();
 
@@ -24,7 +23,6 @@ const App = () => {
     <RestaurantsContextProvider>
       <div className="container">
       <Toggle theme={theme} toggleTheme={themeToggler} />
-
         <Router>
           <Switch>
             <Route exact path="/" component={Home} />

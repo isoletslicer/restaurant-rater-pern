@@ -5,6 +5,7 @@ import RestaurantFinder from "../apis/RestaurantFinder";
 import StarRating from "../components/StarRating";
 import Reviews from "../components/Reviews";
 import AddReview from "../components/AddReview";
+import Back from "../components/BackButton";
 
 const RestaurantDetailPage = () => {
   const { id } = useParams();
@@ -28,6 +29,7 @@ const RestaurantDetailPage = () => {
   }, []);
   return (
     <div>
+      <Back/>
       {selectedRestaurant && (
         <>
           <h1 className="text-center display-1">

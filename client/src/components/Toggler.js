@@ -6,8 +6,9 @@ const Button = styled.button`
   border: 2px solid ${({ theme }) => theme.toggleBorder};
   border-radius: 30px;
   cursor: pointer;
-  position:absolute;
-  right:0;  
+  display:      block;
+  margin-left:  auto;
+  margin-right: 0;
   font-size:0.8rem;
   color: violet;
   padding: 0.6rem;

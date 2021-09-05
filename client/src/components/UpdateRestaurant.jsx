@@ -2,6 +2,7 @@ import React, { useState, useContext, useEffect } from "react";
 import { useParams, useHistory } from "react-router-dom";
 import { RestaurantsContext } from "../context/RestaurantsContext";
 import RestaurantFinder from "../apis/RestaurantFinder";
+import Back from "./BackButton";
 
 const UpdateRestaurant = (props) => {
   const { id } = useParams();
@@ -19,7 +20,6 @@ const UpdateRestaurant = (props) => {
       setLocation(response.data.data.restaurant.location);
       setPriceRange(response.data.data.restaurant.price_range);
     };
-
     fetchData();
   }, []);
 
@@ -35,6 +35,7 @@ const UpdateRestaurant = (props) => {
 
   return (
     <div>
+      <Back/>
       <form action="">
         <div className="form-group">
           <label htmlFor="name">Name</label>
