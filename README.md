@@ -4,4 +4,4 @@ This repo is based on [Sanjeev Thiyagarajan's PERN Stack CRUD Yelp Clone Tutoria
 
 Check out this [Dark Mode Toggle Tutorial](https://www.smashingmagazine.com/2020/04/dark-mode-react-apps-styled-components/).
 
-This version contains about setting up for deployment in Heroku, a bit tweaks, and dark-mode implementation using styled-components.
+This version contains about setting up for deployment in Heroku, a bit tweaks, a back button implemented, and dark-mode implementation using styled-components.
